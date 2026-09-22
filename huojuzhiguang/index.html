@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="火炬之光2控制台全面指南：开启方法、控制台命令大全、物品修改及作弊码详解。提供Runic Games经典ARPG游戏的深度玩法辅助与mod安装教程。">
+    <meta name="keywords" content="火炬之光2控制台,火炬之光2控制台开启,火炬之光2作弊码,火炬之光2物品修改,火炬之光2控制台命令">
+    <title>火炬之光2控制台-控制台开启、命令大全与作弊码修改指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e6b800; /* Torchlight Gold */
+            --primary-hover: #ffcc00;
+            --bg-dark: #1a1a1a;
+            --bg-panel: #2d2d2d;
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a0;
+            --border-color: #444;
+            --accent-red: #d9534f;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            --code-font: "Consolas", "Monaco", "Courier New", monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #111;
+            border-bottom: 2px solid var(--primary-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/torchlight2/1200/600.jpg') center/cover no-repeat;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(230, 184, 0, 0.3);
+        }
+
+        /* Main Content Grid */
+        main {
+            padding: 40px 0;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            nav {
+                display: none; /* Simplify for mobile */
+            }
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 24px;
+            background-color: var(--primary-color);
+        }
+
+        /* Content Card */
+        .card {
+            background-color: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #fff;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        /* Steps List */
+        .step-list {
+            counter-reset: step;
+            list-style: none;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .step-list li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 28px;
+            height: 28px;
+            background-color: var(--primary-color);
+            color: #000;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Code Block */
+        .code-block {
+            background-color: #000;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: var(--code-font);
+            color: #a9b7c6;
+            overflow-x: auto;
+            border-left: 3px solid var(--primary-color);
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Command Table */
+        .command-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .command-table th, .command-table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .command-table th {
+            background-color: #222;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .command-table td:first-child {
+            font-family: var(--code-font);
+            color: #fff;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background-color: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-widget h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #333;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #ccc;
+        }
+
+        .tag:hover {
+            background-color: var(--primary-color);
+            color: #000;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background-color: rgba(217, 83, 79, 0.1);
+            border: 1px solid var(--accent-red);
+            color: #ffcccc;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .warning-box strong {
+            color: var(--accent-red);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                <span>Torchlight2</span>Guide
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#guide">开启方法</a></li>
+                    <li><a href="#commands">常用命令</a></li>
+                    <li><a href="#items">物品修改</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>火炬之光2控制台</h1>
+            <p>全面解析如何开启游戏控制台、常用命令列表以及物品修改技巧，助您轻松体验游戏或进行测试。</p>
+            <a href="#guide" class="btn">开始使用</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="grid-layout">
+            <!-- Main Content -->
+            <div class="content-area">
+                
+                <section id="guide">
+                    <h2 class="section-title">1. 如何开启火炬之光2控制台</h2>
+                    <div class="card">
+                        <p>火炬之光2（Torchlight 2）默认情况下是隐藏控制台的。要启用它，您需要修改游戏的启动参数。无论您是使用 Steam、GOG 还是直接运行 exe 文件，方法都是一样的。</p>
+                        
+                        <h3>方法一：通过 Steam 启动参数</h3>
+                        <p>如果您通过 Steam 运行游戏：</p>
+                        <ol class="step-list">
+                            <li>打开 Steam 库，右键点击《火炬之光2》。</li>
+                            <li>选择“属性”。</li>
+                            <li>在“常规”选项卡中，找到“启动选项”输入框。</li>
+                            <li>输入以下命令并保存：<br><code class="code-block">-console</code></li>
+                        </ol>
+
+                        <h3>方法二：通过快捷方式</h3>
+                        <p>如果您直接运行游戏快捷方式：</p>
+                        <ol class="step-list">
+                            <li>右键点击桌面上的游戏图标，选择“属性”。</li>
+                            <li>切换到“快捷方式”选项卡。</li>
+                            <li>在“目标”一栏的最后添加空格和参数：<br><code class="code-block"> -console</code></li>
+                            <li>点击确定，重新启动游戏即可。</li>
+                        </ol>
+
+                        <div class="warning-box">
+                            <strong>注意：</strong> 开启控制台后，游戏画面左上角会出现一个文本框。按 <strong>Enter</strong> 键输入命令，按 <strong>Enter</strong> 键执行。输入错误的命令不会报错，只是不生效。
+                        </div>
+                    </div>
+                </section>
+
+                <section id="commands">
+                    <h2 class="section-title">2. 常用火炬之光2控制台命令</h2>
+                    <div class="card">
+                        <p>控制台允许您修改游戏数据，包括金钱、物品、等级以及游戏难度。以下是最常用的命令集合：</p>
+                        
+                        <table class="command-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">命令</th>
+                                    <th width="70%">功能说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>givegold [数量]</code></td>
+                                    <td>给予指定数量的金币。例如：givegold 99999</td>
+                                </tr>
+                                <tr>
+                                    <td><code>additem [物品ID]</code></td>
+                                    <td>给予指定ID的物品。这是最强大的命令之一，可获取几乎所有游戏物品。</td>
+                                </tr>
+                                <tr>
+                                    <td><code>levelup</code></td>
+                                    <td>当前角色等级 +1。</td>
+                                </tr>
+                                <tr>
+                                    <td><code>setdifficulty [难度等级]</code></td>
+                                    <td>修改当前难度（1=普通, 2=困难, 3=噩梦, 4=地狱）。例如：setdifficulty 1</td>
+                                </tr>
+                                <tr>
+                                    <td><code>kill</code></td>
+                                    <td>杀死当前选中的敌人。</td>
+                                </tr>
+                                <tr>
+                                    <td><code>killall</code></td>
+                                    <td>杀死当前区域内的所有怪物。</td>
+                                </tr>
+                                <tr>
+                                    <td><code>noclip</code></td>
+                                    <td>穿墙模式，可以穿过墙壁和障碍物。</td>
+                                </tr>
+                                <tr>
+                                    <td><code>god</code></td>
+                                    <td>无敌模式，不会受到任何伤害。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="items">
+                    <h2 class="section-title">3. 物品修改与ID查询</h2>
+                    <div class="card">
+                        <p>使用 <code>additem</code> 命令需要知道物品的内部ID。以下是几个热门装备的ID示例：</p>
+                        
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 10px; color: #ccc;">
+                                <strong>传奇武器示例：</strong> <code>additem "x1_k_Unique_Sword_Berserker" 1</code>
+                            </li>
+                            <li style="margin-bottom: 10px; color: #ccc;">
+                                <strong>魔法药水：</strong> <code>additem "x1_p_ManaPotion_Lvl5" 10</code>
+                            </li>
+                            <li style="margin-bottom: 10px; color: #ccc;">
+                                <strong>传奇护甲：</strong> <code>additem "x1_k_Unique_Armor_Ranger" 1</code>
+                            </li>
+                            <li style="color: #ccc;">
+                                <strong>技能书：</strong> <code>additem "x1_s_Skill_Stone" 1</code>
+                            </li>
+                        </ul>
+
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #888;">提示：完整的物品ID通常很长且包含前缀（如 x1_）。您可以在游戏的本地文件 <code>Items.xml</code> 中搜索您想要的物品名称来获取完整ID。</p>
+                    </div>
+                </section>
+
+                <section id="faq">
+                    <h2 class="section-title">4. 常见问题 (FAQ)</h2>
+                    <div class="card">
+                        <h3>Q: 开启控制台后游戏卡顿怎么办？</h3>
+                        <p>A: 控制台命令（特别是 additem）如果输入错误的物品ID，可能会导致游戏短暂卡顿甚至崩溃。请确保输入的ID格式正确，且不要一次性添加过多物品。</p>
+                        
+                        <h3 style="margin-top: 20px;">Q: 为什么输入命令后没有反应？</h3>
+                        <p>A: 请检查以下几点：1. 是否正确输入了 <code>-console</code> 参数并重启了游戏；2. 输入的命令是否包含空格或标点错误；3. 是否在游戏内（而非菜单界面）按下了回车键。</p>
+                        
+                        <h3 style="margin-top: 20px;">Q: 如何关闭控制台？</h3>
+                        <p>A: 控制台是游戏的一部分，无法通过命令彻底“关闭”或“隐藏”。如果不想看到它，可以将其拖拽到屏幕边缘隐藏，或者通过任务管理器结束游戏进程。</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h4>快速分类</h4>
+                    <nav style="font-size: 0.9rem;">
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 8px;"><a href="#guide">开启方法</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#commands">金钱命令</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#commands">物品获取</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#commands">穿墙与无敌</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h4>热门标签</h4>
+                    <div class="tag-cloud">
+                        <a href="#" class="tag">作弊码</a>
+                        <a href="#" class="tag">MOD安装</a>
+                        <a href="#" class="tag">Runic Games</a>
+                        <a href="#" class="tag">刷装备</a>
+                        <a href="#" class="tag">无限金币</a>
+                        <a href="#" class="tag">VRP</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h4>相关工具推荐</h4>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 10px;">为了更方便地使用火炬之光2控制台，推荐使用第三方物品浏览器。</p>
+                    <ul style="list-style: none; font-size: 0.9rem; color: #ccc;">
+                        <li style="margin-bottom: 8px;">• Torchlight 2 Item Viewer</li>
+                        <li style="margin-bottom: 8px;">• VRP Trainer</li>
+                        <li>• Gemulator</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Torchlight 2 Guide. 本站为玩家社区整理，非Runic Games官方网站。</p>
+            <p>所有游戏名称、商标及图像素材均归开发商所有。</p>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: #555;">
+                网站声明：本站提供的命令仅供学习和测试使用，请勿在正式存档中滥用导致数据损坏。
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
