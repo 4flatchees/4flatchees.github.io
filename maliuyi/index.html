@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="码流仪专业评测与选购指南，涵盖SDI、HDMI、IP网络码流分析技术，提供视频监控码流监控、协议解析及误码率测试解决方案。">
+    <meta name="keywords" content="码流仪,视频码流分析,SDI分析仪,HDMI码流仪,视频监控测试,误码率测试">
+    <title>码流仪-专业视频码流分析仪与监控测试设备选购指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00a8cc;
+            --dark-bg: #1a1f2c;
+            --light-bg: #f4f7f9;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --spacing: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--light-bg);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+        }
+
+        .cta-button:hover {
+            background-color: #004494;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #2c3e50 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .check {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .cross {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: white;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f9f9f9;
+        }
+
+        .faq-answer p {
+            padding: 20px;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: #b0b8c4;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .comparison-table th, .comparison-table td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span>StreamMaster</span> 码流分析
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">核心功能</a></li>
+                    <li><a href="#comparison">产品对比</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact" class="cta-button">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>专业码流仪解决方案<br>解码视频监控与广播质量</h1>
+            <p>针对SDI、HDMI及IP网络视频流的专业分析工具，提供误码率检测、协议解析、码流录制与实时监控，确保视频传输的稳定性与合规性。</p>
+            <div class="hero-tags">
+                <span class="tag">误码率测试</span>
+                <span class="tag">SDI分析</span>
+                <span class="tag">HDMI监控</span>
+                <span class="tag">协议解析</span>
+                <span class="tag">码流录制</span>
+            </div>
+            <a href="#comparison" class="cta-button" style="font-size: 1.1rem; padding: 15px 30px;">查看产品规格</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="features">
+            <div class="section-title">
+                <h2>码流仪的核心价值</h2>
+                <p>视频监控系统日益复杂，使用码流仪是排查信号故障、评估系统性能的关键手段。</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>实时码流监控</h3>
+                    <p>支持H.264、H.265、MPEG-2等主流编码格式的实时解码与预览。无需专业解码软件，直接查看监控画面，快速确认视频源是否正常。</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>误码率与丢包分析</h3>
+                    <p>在复杂电磁环境下，精准统计误码率（BER）和丢包率。帮助工程师定位网络抖动、信号衰减或设备故障原因，保障高清视频传输质量。</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>协议与参数解析</h3>
+                    <p>深度解析ONVIF、RTSP、SIP等网络协议参数。自动检测摄像头IP地址、编码设置、帧率及分辨率配置，简化网络调试流程。</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📼</div>
+                    <h3>码流录制与回放</h3>
+                    <p>支持长时间码流录制，保留关键事件片段。配合回放分析功能，可对特定时间段内的画面质量、码率波动进行逐帧检查。</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>多接口支持</h3>
+                    <p>提供SDI（Serial Digital Interface）、HDMI、RJ45网络接口等多种连接方式。适配模拟摄像机、数字摄像机及网络编码设备的检测需求。</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>合规性测试</h3>
+                    <p>满足安防行业及广播级标准，支持检测视频流中的音频嵌入、时间码同步及关键帧间隔等合规性指标。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="comparison">
+            <div class="section-title">
+                <h2>不同场景下的选择指南</h2>
+                <p>根据您的测试需求与预算，选择最适合的码流分析仪类型。</p>
+            </div>
+
+            <div class="comparison-section">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>功能特性</th>
+                            <th>基础SDI码流仪</th>
+                            <th>网络IP码流仪</th>
+                            <th>综合型分析仪</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>连接接口</td>
+                            <td>SDI/SDI BNC</td>
+                            <td>RJ45 (以太网)</td>
+                            <td>SDI + HDMI + 网口</td>
+                        </tr>
+                        <tr>
+                            <td>主要用途</td>
+                            <td>广电信号链路检查</td>
+                            <td>安防网络监控调试</td>
+                            <td>全链路综合测试</td>
+                        </tr>
+                        <tr>
+                            <td>误码率测试</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>协议解析</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>码流录制</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>价格区间</td>
+                            <td>中高端</td>
+                            <td>中端</td>
+                            <td>高端</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="section-title">
+                <h2>常见问题解答</h2>
+                <p>关于码流仪选购与使用的常见疑问。</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">码流仪和普通解码器有什么区别？</div>
+                    <div class="faq-answer">
+                        <p>普通解码器只能播放视频，而码流仪侧重于“分析”。它能显示码率波形、统计丢包率、分析编码参数，并提供专业的测试报告，是用于故障排查和性能评估的专业仪器。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何判断监控摄像头是否损坏？</div>
+                    <div class="faq-answer">
+                        <p>使用码流仪连接摄像头，查看是否有画面输出。如果没有画面，检查码流仪上的误码率显示。如果误码率极高或为红色报错，通常表示信号传输链路或设备本身存在问题。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">SDI码流仪支持4K信号吗？</div>
+                    <div class="faq-answer">
+                        <p>是的，现代SDI码流仪通常支持12G-SDI标准，能够完整解析和监控4K超高清视频信号的传输质量。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">IP码流仪需要电脑配合使用吗？</div>
+                    <div class="faq-answer">
+                        <p>大多数IP码流仪自带屏幕或通过本地浏览器即可独立查看数据，无需连接电脑。但进行深度数据分析或生成报告时，连接电脑通常体验更佳。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>StreamMaster</h4>
+                    <p>专注于视频测试与测量领域的专业设备供应商，致力于为广电、安防及工业监控客户提供高品质的码流分析解决方案。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>产品类别</h4>
+                    <ul>
+                        <li><a href="#">SDI分析仪</a></li>
+                        <li><a href="#">HDMI码流仪</a></li>
+                        <li><a href="#">网络码流分析仪</a></li>
+                        <li><a href="#">误码率测试仪</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#">技术文档下载</a></li>
+                        <li><a href="#">驱动程序</a></li>
+                        <li><a href="#">预约演示</a></li>
+                        <li><a href="#">售后联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：support@streammaster.com</li>
+                        <li>地址：科技园区创新大道88号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 StreamMaster Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                const isActive = parent.classList.contains('active');
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(child => {
+                    child.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
