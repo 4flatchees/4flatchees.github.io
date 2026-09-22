@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="桃花一朵朵：为您精选高品质桃花茶、桃花干、桃花饮品及相关养生资讯。探索桃花的美丽与功效，提供选购指南与泡法技巧，助您拥有健康红润好气色。">
+    <meta name="keywords" content="桃花一朵朵,桃花茶,桃花干,桃花养生,桃花茶功效,女性养生">
+    <title>桃花一朵朵-天然桃花茶与女性养生指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d65c5c;
+            --primary-hover: #b94545;
+            --secondary-color: #fceceb;
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-body: #f9f9f9;
+            --bg-white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff0f0 0%, #fff 100%);
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .hero-tags span {
+            display: inline-block;
+            background-color: rgba(214, 92, 92, 0.1);
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hero-image img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 0;
+            background-color: var(--bg-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Products Section */
+        .products {
+            padding: 80px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--bg-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+        }
+
+        .product-img {
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-category {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .product-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .product-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Guide Section */
+        .guide {
+            background-color: #fff5f5;
+            padding: 80px 0;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .guide-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .guide-list {
+            margin-top: 20px;
+        }
+
+        .guide-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .guide-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .guide-text h4 {
+            margin-bottom: 5px;
+        }
+
+        .guide-text p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--bg-white);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+
+        .faq-answer p {
+            padding-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-tags {
+                justify-content: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span>🌸</span> 桃花一朵朵
+            </a>
+            <nav class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#products">精选产品</a>
+                <a href="#guide">养生指南</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+            <a href="#products" class="cta-btn">立即选购</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-tags">
+                        <span>天然无添加</span>
+                        <span>古法炮制</span>
+                        <span>美容养颜</span>
+                    </div>
+                    <h1>品味自然之美，邂逅桃花朵朵开</h1>
+                    <p>精选优质桃花干，遵循古法工艺，保留天然营养成分。每一朵桃花都承载着春天的气息，为您带来健康与美丽。</p>
+                    <a href="#products" class="cta-btn" style="display: inline-block; padding: 12px 30px; font-size: 1.1rem;">探索春日好物</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/seed/peachblossom1/600/400.jpg" alt="新鲜桃花干特写">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>有机种植</h3>
+                        <p>源自生态种植基地，无农药残留，确保每一朵桃花都纯净天然。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✂️</div>
+                        <h3>手工采摘</h3>
+                        <p>坚持清晨人工采摘，花瓣饱满，色泽鲜亮，保留最佳口感。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌿</div>
+                        <h3>古法烘干</h3>
+                        <p>低温慢烘技术，锁住营养成分，避免高温破坏活性物质。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h3>顺丰包邮</h3>
+                        <p>专业冷链包装，24小时内发货，确保新鲜直达您的手中。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>春季热销甄选</h2>
+                    <p>为您挑选最适合春季饮用的桃花产品</p>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <span class="product-badge">热销</span>
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/peachtea/400/300.jpg" alt="桃花茶礼盒装">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">茶饮系列</div>
+                            <h3 class="product-title">桃花茶礼盒装（含玫瑰、枸杞）</h3>
+                            <div class="product-price">¥ 128.00</div>
+                            <p class="product-desc">经典搭配，疏肝解郁，调理气血。独立小袋包装，方便冲泡。</p>
+                            <a href="#" class="product-btn">加入购物车</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/peachdry/400/300.jpg" alt="特级桃花干">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">原料系列</div>
+                            <h3 class="product-title">特级桃花干（50g/罐）</h3>
+                            <div class="product-price">¥ 45.00</div>
+                            <p class="product-desc">花瓣完整，色泽粉嫩，适合日常自制花茶。</p>
+                            <a href="#" class="product-btn">加入购物车</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <span class="product-badge">新品</span>
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/peachdrink/400/300.jpg" alt="桃花乌龙茶包">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">茶包系列</div>
+                            <h3 class="product-title">桃花乌龙茶包（20包）</h3>
+                            <div class="product-price">¥ 59.00</div>
+                            <p class="product-desc">清香乌龙搭配桃花，口感醇厚，解腻养颜。</p>
+                            <a href="#" class="product-btn">加入购物车</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/peachpack/400/300.jpg" alt="桃花养生茶组合">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">组合系列</div>
+                            <h3 class="product-title">桃花养生茶组合（4罐）</h3>
+                            <div class="product-price">¥ 168.00</div>
+                            <p class="product-desc">涵盖桃花、洛神花、山楂等多种养生花茶。</p>
+                            <a href="#" class="product-btn">加入购物车</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="guide">
+            <div class="container guide-grid">
+                <div class="guide-image">
+                    <img src="https://picsum.photos/seed/peachdrink2/500/400.jpg" alt="桃花茶冲泡示意图">
+                </div>
+                <div class="guide-content">
+                    <h2>桃花的正确打开方式</h2>
+                    <p>桃花性微温，味辛甘，入肝、脾经，具有活血悦肤、化瘀止痛的功效。掌握正确的冲泡方法，才能发挥其最大价值。</p>
+                    
+                    <div class="guide-list">
+                        <div class="guide-item">
+                            <div class="guide-number">1</div>
+                            <div class="guide-text">
+                                <h4>水温控制</h4>
+                                <p>建议使用80℃-90℃的温水冲泡，避免高温破坏花中的维生素。</p>
+                            </div>
+                        </div>
+                        <div class="guide-item">
+                            <div class="guide-number">2</div>
+                            <div class="guide-text">
+                                <h4>搭配建议</h4>
+                                <p>可搭配红枣、枸杞或玫瑰花，增强补血养颜效果。</p>
+                            </div>
+                        </div>
+                        <div class="guide-item">
+                            <div class="guide-number">3</div>
+                            <div class="guide-text">
+                                <h4>饮用频率</h4>
+                                <p>建议每周饮用2-3次，每次3-5克，不宜过量饮用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                    <p>关于桃花朵朵的疑问，这里都有答案</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">桃花茶适合什么人群饮用？</div>
+                        <div class="faq-answer">
+                            <p>桃花茶适合气血瘀滞、面色暗沉的女性饮用。但月经量过多的女性、孕妇及体寒者应慎用或咨询医生。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">桃花干如何保存？</div>
+                        <div class="faq-answer">
+                            <p>请将桃花干密封保存于阴凉干燥处，避免阳光直射和潮湿，以保持其色泽和营养成分。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">冲泡后的桃花还能吃吗？</div>
+                        <div class="faq-answer">
+                            <p>冲泡后的桃花花瓣可以食用，口感软糯，富含膳食纤维，建议一并食用。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>🌸 桃花一朵朵</h3>
+                    <p>专注于天然花茶与女性养生，致力于传播传统养生文化，让每一位顾客都能感受到春天的美好与健康。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">回到首页</a></li>
+                        <li><a href="#products">产品中心</a></li>
+                        <li><a href="#guide">冲泡指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">配送说明</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：hello@taohua.com</li>
+                        <li>地址：中国·某市某区某街道</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 桃花一朵朵 版权所有. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                              </html>
